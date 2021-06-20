@@ -1,0 +1,48 @@
+#header>#logo {
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+#header>#nav>#gnb {
+    float: right;
+    background-color: gold;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#header>#nav>#gnb>li {
+    float: left;
+}
+
+#header>#nav>#gnb>li>a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: indianred;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#gnb li a:hover {
+    background-color: #222328;
+    color: #fff;
+}
+
+#lnb>li>a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: indigo;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#lnb {
+    display: none;
+}

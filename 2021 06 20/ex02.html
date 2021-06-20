@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function() {
+           $(function () {
+               $("#btn").hover(
+                   function() {                    
+                       $("#box").stop().slideUp(500, "linear", function() {
+                            alert("slide up complete");
+                       });
+                       // stop을 쓰면 현재 실행중인 애니메이션을 멈춘다.
+                   },
+
+                   function() {
+                       $("#box").stop().slideDown(500, "linear");
+                   }
+               )
+           })
+
+            
+        })
+    </script>
+
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>        
+    <button id="btn">g호버</button>
+
+
+    <div id="box">box</div>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+    background-color: aqua;
+    position: fixed;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 400px;
+    top: 400px;
+    
+}

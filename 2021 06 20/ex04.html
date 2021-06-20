@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function() {
+           $(function () {
+               $("#btn").hover(
+                   function() {                    
+                       $("#box").fadeIn("fast", function() {
+                           alert("fadeIn complete");
+                       });
+                        //hide메서드의 콜백함수 설정은 그냥 첫번째 인자로 주면된다.
+                   },
+
+                   function() {
+                       $("#box").fadeOut("slow", function() {
+                           alert("fadeOut complete");
+                       });
+                   }
+               )
+           })
+
+            
+        })
+    </script>
+
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>        
+    <button id="btn">호버</button>
+
+
+    <div id="box">box</div>
+
+</body>
+
+</html>
